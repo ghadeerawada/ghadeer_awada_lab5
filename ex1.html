@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <style>
+            button{
+                background-color:orange;
+                width:200px;
+                height:50px;
+                font-size:24px;
+            
+            }
+                
+            
+
+        </style>
+        <script>
+            function changeMonth(){
+        let arr = ['Jan', 'Feb', 'March', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct','Nov', 'Dec'];
+        for(let i=0; i< arr.length; i++){
+
+        document.querySelector('h2').innerHTML=arr[i];
+
+    }
+    }
+    
+        </script>
+    </head>
+    <body>
+     <h1>Day</h1>
+      <h2>Month</h2>
+      <button onclick="changeDay()">Change day</button>
+      <button onclick="changeMonth()">Change month</button>
+
+
+      <script src="ex1.js"></script>
+
+    </body>
+</html>
